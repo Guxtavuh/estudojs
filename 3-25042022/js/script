@@ -1,0 +1,61 @@
+function while1() {
+  var i = 0;
+  while (i < 10) {
+    console.log(`contei ${i}`);
+    i++;
+  }
+}
+function while2() {
+  var operacao = prompt(
+    "Digite:\n1-Soma\n2-Subtrair\n3-Multiplicar\n4-Diviir\nS-Sair"
+  );
+  while (operacao != "S") {
+    var n1 = prompt("Digite um Número");
+    var n2 = prompt("Digite outro Número");
+    if (operacao == "1") {
+      alert(parseInt(n1) + parseInt(n2));
+    } else if (operacao == "2") {
+      alert(alert(parseInt(n1) - parseInt(n2)));
+    } else if (operacao == "3") {
+      alert(alert(parseInt(n1) * parseInt(n2)));
+    } else if (operacao == "4") {
+      alert(alert(parseInt(n1)) / parseInt(n2));
+    } else {
+      alert("O valor digitado não é uma operação");
+    }
+    prompt("Digite:\n1-Soma\n2-Subtrair\n3-Multiplicar\n4-Dividir\nS-Sair");
+  }
+}
+
+function paleta() {
+  /*RGB(vermelho, verde ,azul);
+RGB(0-255, 0-255, 0-255);
+};
+Vamos usar o comando radom da classe math (matématica) para gerar numeros aleatorios entre 0 e 255 assim iremos formar
+as cores em RGB */
+
+  var tabela = "<table>";
+  for (var linha = 1; linha <= 10; linha++) {
+    tabela += "<tr>";
+    for (var coluna = 1; coluna <= 10; coluna++) {
+      var r = Math.round(Math.random() * 254);
+      var g = Math.round(Math.random() * 254);
+      var b = Math.round(Math.random() * 254);
+
+      tabela += `<td onclick=fundo(this.style.backgroundColor) style=background-color:rgb(${r},${g},${b})></td>`;
+    }
+    tabela += "</tr>";
+  }
+  tabela += "</table>";
+  document.getElementById("caixa").innerHTML = tabela;
+  document.getElementById("caixa").style.display = "block";
+}
+
+function fundo(elemento) {
+  document.body.style.backgroundColor = elemento;
+}
+
+function fecharpaleta() {
+  document.getElementById("caixa").style.display = "none";
+  document.body.style.backgroundColor = "white";
+}
