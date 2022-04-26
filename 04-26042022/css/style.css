@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+form {
+  width: 40%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 10px silver;
+  transition: ease 0.7s;
+}
+
+input {
+  display: block;
+  width: 96%;
+  margin: 10px;
+  padding: 10px;
+}
+
+form:hover {
+  box-shadow: 0px 0px 0px 100vw silver;
+}
