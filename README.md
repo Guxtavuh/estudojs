@@ -19,3 +19,21 @@
 ```javascript
 <script>alert("Olá mundo");</script>
 ```
+
+outro exemplo de aplicação javascript
+
+```html
+<html>
+  <head>
+    <title>Exemplo</title>
+    <head>
+      <body>
+        <script>
+          Console.log("olá mundo");
+        </script>
+      </body>
+      <html></html>
+    </head>
+  </head>
+</html>
+```
