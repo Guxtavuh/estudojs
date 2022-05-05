@@ -76,6 +76,7 @@ app.delete("/Apagar/:id", (req, res) => {
       return res.status(500).send({ output: `Erro ao apagar -> ${erro}` });
     res.status(204).send({ output: "Apagou" });
   });
+  gi;
 });
 
 // definir uma porta de comunicação com um servidor de aplicação
